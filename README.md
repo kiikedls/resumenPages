@@ -1,2 +1,2 @@
 # resumenPages
-pagona estatica para mostrar mis habilidades como deasrrollador
+pagina estatica para mostrar mis habilidades como desarrollador
