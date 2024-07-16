@@ -4,96 +4,146 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="mystyle.css" />
     <title>Juan Enrique</title>
 </head>
 <!--TODO: considerar hacer un navbar pegajoso cuando sea una pantalla de mobiles-->
 
 <body>
-    <div class="sidebar">
+    <nav>
+        <div class="sidebar">
 
-        <div class="user">
-            <!--TODO: corregir la forma y el tamaño de la imagen del sidebar-->
-            <div class="image-cropper">
-                <img src="img/eating_pizza.jpg" alt="its me" class="user-img" />
+            <div class="user">
+                <!-- !el crooper no esta centrado, eso hace ver la imagen des-centrada-->
+                <div class="image-cropper">
+                    <img src="img/eating_pizza.jpg" alt="its me" class="user-img" />
+                </div>
+                <div>
+                    <p class="bold">Juan E. Espinoza</p>
+                    <p>Web developer</p>
+                </div>
             </div>
-            <div>
-                <p class="bold">Juan E. Espinoza</p>
-                <p>Web developer</p>
-            </div>
+    
+            
+            <a href="#aboutme" class="sidebar-link">About me</a>
+            <a href="#portafolio" class="sidebar-link">Portafolio</a>
+            <a href="#education" class="sidebar-link">Education</a>
+            <a href="#skills" class="sidebar-link">Skills</a>
+            <a href="#contact" class="sidebar-link">Contact</a>
         </div>
+    </nav>
+    
 
-        <!-- !corregir cuando bajas en la pagina y luego vuelves al inicio todos los links se iluminan-->
-        <a href="#aboutme" class="sidebar-link">About me</a>
-        <a href="#portafolio" class="sidebar-link">Portafolio</a>
-        <a href="#education" class="sidebar-link">Education</a>
-        <a href="#skills" class="sidebar-link">Skills</a>
-        <a href="#contact" class="sidebar-link">Contact</a>
-    </div>
-    <div class="main-content">
-        <!--TODO: poner en una seccion mi presentacion inicial y una foto de mi-->
-        <section id="welcome">
-            <h1>Hola mundo!</h1>
-            <p>Bienvenido, este es mi portafolio profesional, soy desarrollador web backend, frontend y mobile</p>
-            <sub>puedes contactarme <a
-                    href="mailto:jespinozadelossantos@gmail.com">jespinozadelossantos@gmail.com</a></sub>
-        </section>
-        <!-- TODO: hacer todos estos un grupo de botones que dirijan a donde debe ser-->
-        <button>Reviza mi CV</button>
-        <button>linkedin</button>
-        <button>Github</button>
-        <button>email</button>
-        <section id="aboutme">
-            <h2>About me</h2>
-            <p>Soy un entusiaste programador interesado en la simplicidad y optimizacion de modo que las aplicaciones
-                cumplan su fincion de forma idónea. Aunque mi especialidad es el codigo Backend, estoy muy interesado y
-                apasionado por el diseño de interfaces esteticas y amigables al usuario. Tambien tengo conocimientos
-                para programacion de aplicaciones mobiles y me gusta incursionar en nuevas y mejores tecnologias </p>
-            <p>Cuento con Titulo profesional de <strong>Ingeniero en tecnologias de la informacion</strong> actualmente
-                con 4 años de experiencia en el campo de programador</p>
-            <p>Puedes saber mas de mis conocimientos y experiencia en <a href="#">mi CV</a> o tambien piuedes visitar mi
-                perfil de <a href="#">LinkedIn</a></p>
-            <p>tambien puedes comicarte conmigo en a mi <a
-                    href="mailto:jespinozadelossantos@gmail.com"><strong>jespinozadelossantos@gmail.com</strong></a></p>
-        </section>
-        <section id="portafolio">
-            <h2>Portafolio</h2>
-            <!-- TODO: buscar algunos proyectos para poner aqui o en caso de no eliminar esta seccion-->
-            <div class="card">aqui van varias cards sobre mis proyectos</div>
-        </section>
-        <section id="education">
-            <h2>Education</h2>
-            <!-- TODO: meterle diseño a mi educacion xD-->
-            <div class="certificado">
-                <h3>Ing. Tecnologias de la Informacion</h3>
-                <sub>2019 - 2021</sub>
-                <p>Universidad Tecnologica de Torreon</p>
-            </div>
-            <div class="certificado">
-                <h3>Tecnico Superior Universitario(TSU) area de programacion</h3>
-                <sub>2017 - 2019</sub>
-                <p>Universidad Tecnologica de Torreon</p>
-            </div>
-        </section>
-        <section id="skills">
-            <h2>Skills</h2>
-            <!-- TODO: hacer varias tarjetas o botones con mis conocimientos-->
-            <p>lenguajes de programacion</p>
-            <p>frameworks y librerias</p>
-            <p>software y herramientas</p>
-            <p>Tambien estoy aprendiendo...</p>
-        </section>
-        <section id="contact">
-            <h2>Contactame</h2>
-            <!-- TODO: hacer un grupo de varios botones para que me contacten-->
-            <button>mi CV</button>
-            <button>mi email</button>
-            <button>perfil de linkedIn</button>
-            <button>perfil de Github</button>
-        </section>
-    </div>
+    <main>
+        <div class="main-content">
+            <!--TODO: poner en una seccion mi presentacion inicial y una foto de mi-->
+            <section id="welcome" class="row">
+                <div class="container col-8">
+                    <h1>Hola mundo!</h1>
+                    <p>Bienvenido, este es mi portafolio profesional, soy desarrollador web backend, frontend y mobile</p>
+                    <sub>puedes contactarme <a
+                            href="mailto:jespinozadelossantos@gmail.com">jespinozadelossantos@gmail.com</a></sub>
+                    <div class="button-group">
+                        <!-- TODO: hacer todos estos un grupo de botones que dirijan a donde debe ser-->
+                        <button>Reviza mi CV</button>
+                        <button>linkedin</button>
+                        <button>Github</button>
+                        <button>email</button>
+                    </div>
+                </div>
+                <div class="container col-4">
+                    <img src="img/foto_prof.jpe" alt="fotografia">
+                </div>
+            </section>
+    
+            <section id="aboutme">
+                <h2>About me</h2>
+                <p>Soy un entusiaste programador interesado en la simplicidad y optimizacion de modo que las aplicaciones
+                    cumplan su fincion de forma idónea. Aunque mi especialidad es el codigo Backend, estoy muy interesado y
+                    apasionado por el diseño de interfaces esteticas y amigables al usuario. Tambien tengo conocimientos
+                    para programacion de aplicaciones mobiles y me gusta incursionar en nuevas y mejores tecnologias </p>
+                <p>Cuento con Titulo profesional de <strong>Ingeniero en tecnologias de la informacion</strong> actualmente
+                    con 4 años de experiencia en el campo de programador</p>
+                <p>Puedes saber mas de mis conocimientos y experiencia en <a href="#">mi CV</a> o tambien piuedes visitar mi
+                    perfil de <a href="#">LinkedIn</a></p>
+                <p>tambien puedes comicarte conmigo en a mi <a
+                        href="mailto:jespinozadelossantos@gmail.com"><strong>jespinozadelossantos@gmail.com</strong></a></p>
+            </section>
+
+            <section id="portafolio">
+                <h2>Portafolio</h2>
+                <!-- TODO: buscar algunos proyectos para poner aqui o en caso de no eliminar esta seccion-->
+                <div class="card">
+                    <img src="..." class="card-img-top" alt="...">
+    
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+    
+                <div class="card" aria-hidden="true">
+                    <img src="..." class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title placeholder-glow">
+                            <span class="placeholder col-6"></span>
+                        </h5>
+                        <p class="card-text placeholder-glow">
+                            <span class="placeholder col-7"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-4"></span>
+                            <span class="placeholder col-6"></span>
+                            <span class="placeholder col-8"></span>
+                        </p>
+                        <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="education">
+                <h2>Education</h2>
+                <!-- TODO: meterle diseño a mi educacion xD-->
+                <div class="certificado">
+                    <h3>Ing. Tecnologias de la Informacion</h3>
+                    <sub>2019 - 2021</sub>
+                    <p>Universidad Tecnologica de Torreon</p>
+                </div>
+                <div class="certificado">
+                    <h3>Tecnico Superior Universitario(TSU) area de programacion</h3>
+                    <sub>2017 - 2019</sub>
+                    <p>Universidad Tecnologica de Torreon</p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>Skills</h2>
+                <!-- TODO: hacer varias tarjetas o botones con mis conocimientos-->
+                <p>lenguajes de programacion</p>
+                <p>frameworks y librerias</p>
+                <p>software y herramientas</p>
+                <p>Tambien estoy aprendiendo...</p>
+            </section>
+
+            <section id="contact">
+                <h2>Contactame</h2>
+                <!-- TODO: hacer un grupo de varios botones para que me contacten-->
+                <button>mi CV</button>
+                <button>mi email</button>
+                <button>perfil de linkedIn</button>
+                <button>perfil de Github</button>
+            </section>
+        </div>
+    </main>
+    
 
     <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
